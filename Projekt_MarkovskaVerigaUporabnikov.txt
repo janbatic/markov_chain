@@ -1,0 +1,18 @@
+Opis: Načrtajte in implementirajte razčlenjevalnik, ki za dane vhodne podatke o zadovoljstvu uporabnikov zgradi prehodno matriko pripadajoče Markovske verige. 
+Na voljo sta dva primera vhodih podatkov:
+1. V priloženi datoteki EMS_Customer_Satisfaction_By_Month.csv z navodili v datoteki EMS_Customer_Satisfaction_By_Month_Descr.pdf. 
+2. Podatki v datoteki userSatisfactionStates.csv, ki jo preberete s stavkom
+data_MC = pd.read_csv('userSatisfactionStates.csv', index_col=0).
+Podatki imajo štiti stanja s pomenom:
+ZZ = zelo zadovoljen
+Z = zadovoljen
+NZ = nezadovoljen
+OD = zamenjal bom operaterja (najmanj zadovoljen).
+Podatki so za 600 uporabnikov (uID_1 ... uID_600) na tedenski osnovi za dve leti, torej je 52*2 = 104 vzorcev.
+
+
+Preverite do kakšne mere za dane podatke drži lastnost Markova in homogenost v času. 
+
+Vhodni podatki: Datoteka zadovoljstva uporabnikov
+Rezultat: Prehodna matrika Markovske verige, analiza matrike
+
